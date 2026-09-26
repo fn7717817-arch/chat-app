@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>تطبيق الدردشة</Text>
+      <Text style={styles.text}>Chat App Test Build</Text>
     </View>
   );
 }
@@ -15,5 +15,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: 'bold',
   },
 });
