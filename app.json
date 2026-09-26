@@ -3,6 +3,9 @@
     "name": "chat-app",
     "slug": "chat-app",
     "version": "1.0.0",
+    "android": {
+      "package": "com.chatapp.app"
+    },
     "extra": {
       "eas": {
         "projectId": "1bb9e453-7951-46b7-b808-bcf50c57781f"
