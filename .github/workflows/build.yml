@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -16,15 +17,15 @@ jobs:
         with:
           node-version: 18
 
-      - name: Setup Expo
+      - name: Setup EAS CLI
         uses: expo/expo-github-action@v8
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
+      - name: Install Dependencies
+        run: yarn install
 
-      - name: Build APK
+      - name: Build Android APK
         run: npx eas-cli build -p android --profile preview --non-interactive
         
