@@ -1,12 +1,19 @@
-{
-  "expo": {
-    "name": "تطبيق دردشة",
-    "slug": "chat-app",
-    "version": "1.0.0",
-    "extra": {
-      "eas": {
-        "projectId": "ضع_هنا_PROJECT_ID_الخاص_بشروعك"
-      }
-    }
-  }
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>تطبيق الدردشة</Text>
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
