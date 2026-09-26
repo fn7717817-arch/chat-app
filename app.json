@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "تطبيق دردشة",
+    "name": "chat-app",
     "slug": "chat-app",
     "version": "1.0.0",
     "extra": {
       "eas": {
-        "projectId": "ضع_هنا_PROJECT_ID_الخاص_بشروعك"
+        "projectId": "1bb9e453-7951-46b7-b808-bcf50c57781f"
       }
     }
   }
